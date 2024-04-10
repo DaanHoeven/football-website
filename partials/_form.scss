@@ -1,0 +1,110 @@
+@use "./variables";
+
+form {
+    display: block;
+    flex-direction: column;
+    max-width: 30%;
+    margin: 1.25rem auto;
+    padding: 0;
+    background-color: variables.$lightgrey;
+    box-shadow: 0 0 1.25rem 0 variables.$darkgrey;
+
+    h3 {
+        text-align: center;
+        padding-top: 0.5rem;
+        padding-bottom: 1rem;
+    }
+
+    p {
+        font-weight: 700;
+    }
+
+    label {
+        font-family: Montserrat, sans-serif;
+        font-size: 0.9rem;
+        font-weight: 700;
+    }
+
+    input,
+    #message,
+    select {
+        border: 1px solid variables.$black;
+        border-radius: 5px;
+        padding: 0.2rem;
+    }
+
+    @media screen and (max-width: 1200px) {
+        max-width: 50%;
+    }
+
+    @media screen and (max-width: 900px) {
+        max-width: 70%;
+    }
+
+    @media screen and (max-width: 600px) {
+        max-width: 90%;
+    }
+
+
+    .personal-info-input {
+        display: grid;
+        grid-template-columns: 0.1fr 0.1fr;
+        margin-bottom: 1rem;
+        padding: 1rem;
+        margin-left: 1.25rem;
+
+        label {
+            text-align: right;
+            margin-right: 0.3rem;
+        }
+    }
+
+    .gender-input {
+        display: grid;
+        grid-template-columns: 0.1fr 0.1fr;
+        gap: 0.5rem;
+        margin-bottom: 1rem;
+        padding: 1rem;
+        margin-left: 1.25rem;
+
+        p {
+            grid-column: span 2;
+            width: max-content;
+        }
+
+        label {
+            text-align: right;
+        }
+    }
+
+    .message-input {
+        display: grid;
+        grid-template-columns: 0.01fr 0.2fr;
+        gap: 0.5rem;
+        margin-bottom: 0.5rem;
+        padding: 1rem;
+        margin-left: 1.25rem;
+
+        #message {
+            width: 300px;
+            height: 200px;
+            width: max-content;
+            height: 45px;
+            padding-left: 0.6rem;
+            padding-top: 0.3rem;
+        }
+    }
+
+    .privacy-notice {
+        display: grid;
+        grid-template-columns: 0.05fr 1fr;
+        gap: 0.5rem;
+        margin-bottom: 1rem;
+        padding: 15px;
+        margin-left: 20px;
+
+        #submit:hover {
+            background-color: variables.$white;
+        }
+    }
+}

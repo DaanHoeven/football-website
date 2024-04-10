@@ -1,0 +1,58 @@
+@use "./variables";
+
+
+#talents-list {
+
+    #talents-intro {
+        background-color: variables.$white;
+        padding: 1.25rem;
+        border: 1px solid variables.$lightgrey;
+        text-align: center;
+        font-size: 1.25rem;
+        margin: 1.2rem;
+        font-style: italic;
+        box-shadow: 0 0 20px 0 variables.$darkgrey;
+    }
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    #talents-h2 {
+        font-size: 2.5rem;
+        margin-bottom: 1rem;
+    }
+
+
+    #talents {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 1.25rem;
+        margin-bottom: 100px;
+
+        @media screen and (max-width: 1550px) {
+            grid-template-columns: repeat(2, 1fr);
+        }
+
+        @media screen and (max-width: 950px) {
+            grid-template-columns: 1fr;
+        }
+    }
+
+    .talent-article {
+        background-color: variables.$white;
+        padding: 1.2rem;
+        text-align: center;
+        box-shadow: 0 0 20px 0 variables.$darkgrey;
+    }
+
+    .talent-img {
+        width: 200px;
+        margin: 0.6rem 0;
+    }
+
+    p {
+        font-size: 1.1rem;
+        margin: 0.6rem 0;
+    }
+}

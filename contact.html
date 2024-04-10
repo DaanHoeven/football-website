@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <link rel="stylesheet" href="partials/stylesheet.css">
+</head>
+
+<body>
+    <header>
+        <a href="index.html">
+            <h1>FootyWeb</h1>
+        </a>
+
+        <nav>
+            <ul class="nav_links">
+                <li><a href="debates.html">Latest Debates</a></li>
+                <li><a href="talents.html">Biggest Talents</a></li>
+                <li><a href="goats.html">GOATS</a></li>
+                <li><a href="sitespec.html">Site Specification</a></li>
+                <li><a href="articles.html">News</a></li>
+                <li><a href="#footer">Footer</a></li>
+            </ul>
+        </nav>
+        <a class="cta" href="contact.html">Contact</a>
+    </header>
+
+    <main class="home-main">
+        <h2>Contact</h2>
+
+        <form>
+            <h3>Leave your message/feedback here!</h3>
+            <div class="personal-info-input">
+                <label for="name">Name:</label>
+                <input placeholder="Tyler West" id="name" type="text" required>
+
+                <label for="email">Email:</label>
+                <input placeholder="Tyler.West@gmail.com" id="email" type="text" required>
+
+                <label for="phone">Telephone number:</label>
+                <input placeholder="0455338877" id="phone" type="tel">
+
+                <label for="age">Age:</label>
+                <input placeholder="21" id="age" type="number" min="12" required>
+
+                <label for="language">Language:</label>
+                <select name="language" id="language">
+                    <option value="English">English</option>
+                    <option value="Dutch">Dutch</option>
+                    <option value="French">French</option>
+                    <option value="Spanish">Spanish</option>
+                </select>
+            </div>
+
+            <div class="gender-input">
+                <p>Please select your gender:</p>
+                <label for="male">Male:</label>
+                <input name="gender" id="male" type="radio">
+
+                <label for="female">Female:</label>
+                <input name="gender" id="female" type="radio">
+
+                <label for="other">other:</label>
+                <input name="gender" id="other" type="radio">
+            </div>
+
+            <div class="message-input">
+                <label for="message">Message:</label>
+                <textarea id="message" placeholder="Your Message"></textarea>
+            </div>
+
+            <div class="privacy-notice">
+                <input id="privacy" type="checkbox" required>
+                <label for="privacy">Do you agree to the terms and conditions?</label>
+
+                <input id="submit" type="submit" value="Submit">
+            </div>
+        </form>
+
+    </main>
+
+    <footer id="footer">
+        <p id="copyright">&copy; Daan Hoeven - 2023-2024</p>
+    </footer>
+</body>
+
+</html>

@@ -1,0 +1,35 @@
+@use "header";
+@use "main";
+@use "footer";
+@use "variables";
+@use "form";
+@use "articles";
+@use "debates";
+@use "goats";
+@use "talents";
+@use "sitespec";
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;600&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    max-width: 100%;
+
+    h2 {
+        font-family: 'Montserrat', sans-serif;
+        font-size: 40px;
+    }
+
+    h3 {
+        font-family: 'Montserrat', sans-serif;
+        font-size: 20px;
+    }
+
+    p {
+        font-family: 'Montserrat', sans-serif;
+        font-size: 15px;
+    }
+}
